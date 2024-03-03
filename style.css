@@ -1,0 +1,42 @@
+.container {
+    font-family: "Madimi One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Set the height of the container to full viewport height */
+    
+}
+.container-fluid {
+    font-family: "Madimi One", sans-serif;
+    opacity: 0.8;    
+}
+button {
+    margin: 10px;
+    width: 550px;
+    padding: 10px 20px;
+    background-color: #9203ff; 
+    color: rgb(255, 255, 255); 
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 20px;
+    font-family: "Madimi One", sans-serif;
+    
+}
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button:hover {
+    background-color: #68209f; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}

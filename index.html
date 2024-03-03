@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Sound Effects - ZaminFX </title>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        section {
+            display: inline-block;
+            text-align: left; /* Isso alinhará o texto "Play Sound Effects" à esquerda */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>ZaminFX</strong></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2 style="text-align: center;">Play Sound Effects</h2>
+                    <h3 style="text-align: center;">Click a Button to Play a Sound</h3>
+                </hgroup>
+                <button data-sound="1"
+                    onclick="playSound('/Users/bernardozamin/Documents/Funny-Website/sounds/bemtevi.mp3');">🦜</button>
+                <button data-sound="2"
+                    onclick="playSound('/Users/bernardozamin/Documents/Funny-Website/sounds/error-sound.mp3');">🪰</button>
+                <button data-sound="3"
+                    onclick="playSound('/Users/bernardozamin/Documents/Funny-Website/sounds/zé-da-manga.mp3');">🥭</button>
+
+            </section>
+        </div>
+        <script>
+            var audioElements = []; // Mantém uma referência para todos os elementos de áudio
+            function playSound(soundPath) {
+                var audio = new Audio(soundPath);
+                audioElements.push(audio); // Adiciona o novo áudio à lista
+                audio.play();
+            }
+
+        </script>
+    </main>
+</body>
+
+</html>
