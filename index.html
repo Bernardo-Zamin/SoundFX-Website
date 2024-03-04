@@ -19,7 +19,14 @@
 
         section {
             display: inline-block;
-            text-align: left; /* Isso alinhará o texto "Play Sound Effects" à esquerda */
+            text-align: center; /* Alinha o texto e os botões ao centro */
+        }
+
+        /* Estilos para telas menores */
+        @media only screen and (max-width: 600px) {
+            section {
+                display: block; /* Mostra os botões verticalmente */
+            }
         }
     </style>
 </head>
@@ -34,8 +41,8 @@
         <div class="grid">
             <section>
                 <hgroup>
-                    <h2 style="text-align: center;">Play Sound Effects</h2>
-                    <h3 style="text-align: center;">Click a Button to Play a Sound</h3>
+                    <h2>Play Sound Effects</h2>
+                    <h3>Click a Button to Play a Sound</h3>
                 </hgroup>
                 <button data-sound="1"
                     onclick="playSound('/Users/bernardozamin/Documents/Funny-Website/sounds/bemtevi.mp3');">🦜</button>
