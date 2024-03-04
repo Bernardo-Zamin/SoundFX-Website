@@ -10,11 +10,6 @@ Uma aplicação web simples e engraçada de efeitos sonoros.
 - CSS :art:
 - JavaScript :yellow_heart:
 
-## Demonstração :link:
-
-Confira a aplicação em ação:
-- [Testar Efeitos Sonoros](https://bernardo-zamin.github.io/SoundFX-Website/)
-
 ## Autor :bust_in_silhouette:
 
 Desenvolvido por [Bernardo Zamin](https://github.com/Bernardo-Zamin)
